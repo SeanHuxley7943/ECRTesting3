@@ -76,4 +76,4 @@ jobs:
       env:
         IMAGE_URI: ${{ steps.build-image.outputs.image }}
       run: |
-        aws lambda update-function-code --function name arn:aws:lambda:us-west-2:698377952916:function:ECRTestingLambdaImage --image-uri $IMAGE_URI
+        aws lambda update-function-code --function-name arn:aws:lambda:us-west-2:698377952916:function:ECRTestingLambdaImage --image-uri $IMAGE_URI
